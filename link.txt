@@ -1,0 +1,3 @@
+https://github.com/ahillahaffat/a433-microservices.git
+
+docker pull ghcr.io/ahillahaffat/item-app:v1
