@@ -20,10 +20,11 @@ RUN chmod +x ./wait-for-it.sh
 COPY index.js ./
 
 # Set the environment variable PORT to 3001
-ENV PORT=3000
+ENV PORT=3001
 
 # Expose the specified port
 EXPOSE $PORT
 
 # Define the command to run the application after waiting for RabbitMQ to start
 CMD ["sh", "-c", "./wait-for-it.sh my-rabbitmq:5672 --timeout=30 -- node index.js"]
+
